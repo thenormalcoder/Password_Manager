@@ -11,7 +11,7 @@ const client = new MongoClient(url);
 
 // Database Name
 const dbName = 'Word_Wrap';
-const port = 3000
+const port = process.env.PORT || 3000
 const dotenv= require('dotenv')
 app.use(bodyparser.json())
 app.use(cors())
